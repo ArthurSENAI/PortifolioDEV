@@ -203,6 +203,7 @@ header .navbar a{
 header .navbar a:hover,
 header .navbar a.active{
     color: var(--red);
+    text-decoration: underline;
 }
 
 header #menu-btn{

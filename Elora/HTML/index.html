@@ -48,14 +48,41 @@
         <!-- Logo End -->
 
         <!-- Navbar -->
-        <nav class="navbar">
-            <a href="#home">inicio</a>
-            <a href="#about">sobre</a>
-            <a href="#service">serviço</a>
-            <a href="#portfolio">portfolio</a>
-            <a href="#testimonial">testimonials</a>
-            <a href="#blog">blogs</a>
-            <a href="#contact">contato</a>
+        <nav class="navbar" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+            <span style="display: flex; align-items: center; margin-right: 20px;">
+                <i class="fas fa-home fa-lg" aria-hidden="true"></i>
+                <a href="#home" style="margin-left: 10px;">Inicio</a>
+            </span>
+            
+            <span style="display: flex; align-items: center; margin-right: 20px;">
+                <i class="fas fa-info-circle fa-lg" aria-hidden="true"></i>
+                <a href="#about" style="margin-left: 10px;">sobre</a>
+            </span>
+            
+            <span style="display: flex; align-items: center; margin-right: 20px;">
+                <i class="fas fa-gavel fa-lg" aria-hidden="true"></i>
+                <a href="#service" style="margin-left: 10px;">Serviço</a>
+            </span>
+            
+            <span style="display: flex; align-items: center; margin-right: 20px;">
+                <i class="fas fa-window-restore fa-lg" aria-hidden="true"></i>
+                <a href="#portfolio" style="margin-left: 10px;">Portfolio</a>
+            </span>
+            
+            <span style="display: flex; align-items: center; margin-right: 20px;">
+                <i class="fa fa-users fa-lg" aria-hidden="true"></i>
+                <a href="#testimonial" style="margin-left: 10px;">Depoimento</a>
+            </span>
+            
+            <span style="display: flex; align-items: center; margin-right: 20px;">
+                <i class="fa fa-file fa-lg" aria-hidden="true"></i>
+                <a href="#blog" style="margin-left: 10px;">Noticias</a>
+            </span>
+            
+            <span style="display: flex; align-items: center; margin-right: 20px;">
+                <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i>
+                <a href="#contact" style="margin-left: 10px;">Contato</a>
+            </span>
         </nav>
 
         <!-- Menubar -->
@@ -354,64 +381,95 @@
         <div class="gallery">
 
             <ul class="controls">
-                <li class="button btn active" data-filter="all">all</li>
-                <li class="button btn" data-filter="web">web development</li>
-                <li class="button btn" data-filter="design">graphic design</li>
-                <li class="button btn" data-filter="photography">photography</li>
+                <li class="button btn active" data-filter="all">todos</li>
+                <li class="button btn" data-filter="web">sites - Front e Back</li>
+                <li class="button btn" data-filter="construcao">Construção e Projeção de Banco de Dados</li>
+                <li class="button btn" data-filter="migracao">Migração para cloud</li>
+                <li class="button btn" data-filter="administracao">Administração e Analise de Bancos de Dados</li>
+                <li class="button btn" data-filter="dashboard">Criação de Dashboards</li>
+                <li class="button btn" data-filter="suporte">Suporte pos-execução</li>
             </ul>
     
             <div class="box-container">
     
                 <div class="portfolio-item image web">
-                    <img src="assets/images/Portfolio/portfolio-1.png" alt="Portfolio-Image" />
+                    <img src="assets/images/Portfolio/frontend.png" alt="Portfolio-frontend" />
                     <div class="content">
-                        <h4>web development</h4>
+                        <h4>Front-end</h4>
                         <p>category</p>
-                        <a data-effect="mfp-newspaper" href="assets/images/Portfolio/portfolio-1.png" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                        <a data-effect="mfp-newspaper" href="assets/images/Portfolio/frontend.png" class="view-btn"><i class="fas fa-search-plus"></i></a>
                     </div>
                 </div>
     
                 <div class="portfolio-item image web">
-                    <img src="assets/images/Portfolio/portfolio-2.png" alt="Portfolio-Image" />
+                    <img src="assets/images/Portfolio/backend.webp" alt="Portfolio-backend" />
                     <div class="content">
-                        <h4>web development</h4>
+                        <h4>Back-end</h4>
                         <p>category</p>
-                        <a data-effect="mfp-newspaper" href="assets/images/Portfolio/portfolio-2.png" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                        <a data-effect="mfp-newspaper" href="assets/images/Portfolio/backend.webp" class="view-btn"><i class="fas fa-search-plus"></i></a>
                     </div>
                 </div>
     
-                <div class="portfolio-item image design">
-                    <img src="assets/images/Portfolio/portfolio-3.png" alt="Portfolio-Image" />
+                <div class="portfolio-item image construcao">
+                    <img src="assets/images/Portfolio/construcao.webp" alt="Portfolio-Image" />
                     <div class="content">
-                        <h4>graphic design</h4>
+                        <h4>Construção de Banco de Dados</h4>
                         <p>category</p>
-                        <a data-effect="mfp-newspaper" href="assets/images/Portfolio/portfolio-3.png" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                        <a data-effect="mfp-newspaper" href="assets/images/Portfolio/construcao.webp" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item image construcao">
+                    <img src="assets/images/Portfolio/projetar.png" alt="Portfolio-Image" />
+                    <div class="content">
+                        <h4>Projeção de Banco de Dados</h4>
+                        <p>category</p>
+                        <a data-effect="mfp-newspaper" href="assets/images/Portfolio/projetar.png" class="view-btn"><i class="fas fa-search-plus"></i></a>
                     </div>
                 </div>
     
-                <div class="portfolio-item image design">
-                    <img src="assets/images/Portfolio/portfolio-4.png" alt="Portfolio-Image" />
+                <div class="portfolio-item image migracao">
+                    <img src="assets/images/Portfolio/migrar-nuvem.webp" alt="Portfolio-Image" />
                     <div class="content">
-                        <h4>graphic design</h4>
+                        <h4>Migração para cloud</h4>
                         <p>category</p>
-                        <a data-effect="mfp-newspaper" href="assets/images/Portfolio/portfolio-4.png" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                        <a data-effect="mfp-newspaper" href="assets/images/Portfolio/migrar-nuvem.webp" class="view-btn"><i class="fas fa-search-plus"></i></a>
                     </div>
                 </div>
-                <div class="portfolio-item image photography">
-                    <img src="assets/images/Portfolio/portfolio-5.png" alt="Portfolio-Image" />
+
+                <div class="portfolio-item image administracao">
+                    <img src="assets/images/Portfolio/DBA.jpg" alt="Portfolio-Image" />
                     <div class="content">
-                        <h4>photography</h4>
+                        <h4>Administração de Bancos de Dados</h4>
                         <p>category</p>
-                        <a data-effect="mfp-newspaper" href="assets/images/Portfolio/portfolio-5.png" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                        <a data-effect="mfp-newspaper" href="assets/images/Portfolio/DBA.jpg" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item image administracao">
+                    <img src="assets/images/Portfolio/AnaliseDados.jpg" alt="Portfolio-Image" />
+                    <div class="content">
+                        <h4>Analise de Bancos de Dados</h4>
+                        <p>category</p>
+                        <a data-effect="mfp-newspaper" href="assets/images/Portfolio/AnaliseDados.jpg" class="view-btn"><i class="fas fa-search-plus"></i></a>
                     </div>
                 </div>
     
-                <div class="portfolio-item image photography">
-                    <img src="assets/images/Portfolio/portfolio-6.png" alt="Portfolio-Image" />
+                <div class="portfolio-item image dashboard">
+                    <img src="assets/images/Portfolio/dashboard.avif" alt="Portfolio-Image" />
                     <div class="content">
-                        <h4>photography</h4>
+                        <h4>Criação de Dashboards</h4>
                         <p>category</p>
-                        <a data-effect="mfp-newspaper" href="assets/images/Portfolio/portfolio-6.png" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                        <a data-effect="mfp-newspaper" href="assets/images/Portfolio/dashboard.avif" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item image suporte">
+                    <img src="assets/images/Portfolio/suporte.jpg" alt="Portfolio-Image" />
+                    <div class="content">
+                        <h4>Suporte pos-execução</h4>
+                        <p>category</p>
+                        <a data-effect="mfp-newspaper" href="assets/images/Portfolio/suporte.jpg" class="view-btn"><i class="fas fa-search-plus"></i></a>
                     </div>
                 </div>
     
@@ -435,109 +493,91 @@
             <div class="swiper-wrapper">
 
                 <div class="swiper-slide testi-item">
-                    <img src="assets/images/Testimonials/pic-1.png" alt="Testimonial-Pic" />
+                    <img src="assets/images/Testimonials/pessoa 1.avif" alt="Testimonial-Pic" />
 
                     <i class="fas fa-quote-left"></i>
 
                     <p class="comment">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Voluptatum deleniti architecto harum natus aliquid nostrum 
-                        ad asperiores sequi, eligendi sint assumenda eum illo similique 
-                        repellendus.
+                        Excelente em análise de dados. Transformou nossos relatórios em insights valiosos. Recomendo fortemente!
                     </p>
 
                     <div class="intro">
-                        <h3>jason roy</h3>
+                        <h3>Ana Silva</h3>
                         <h5>web developer</h5>
                     </div>
                 </div>
 
                 <div class="swiper-slide testi-item">
-                    <img src="assets/images/Testimonials/pic-2.png" alt="Testimonial-Pic" />
+                    <img src="assets/images/Testimonials/pessoa 2.avif" alt="Testimonial-Pic" />
 
                     <i class="fas fa-quote-left"></i>
 
                     <p class="comment">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Voluptatum deleniti architecto harum natus aliquid nostrum 
-                        ad asperiores sequi, eligendi sint assumenda eum illo similique 
-                        repellendus.
+                        Profissional de DBA excepcional. Nossa base de dados nunca esteve tão eficiente.
                     </p>
 
                     <div class="intro">
-                        <h3>evelyn jones</h3>
+                        <h3>João Pereira</h3>
                         <h5>freelancer</h5>
                     </div>
                 </div>
 
                 <div class="swiper-slide testi-item">
-                    <img src="assets/images/Testimonials/pic-3.png" alt="Testimonial-Pic" />
+                    <img src="assets/images/Testimonials/pessoa 3.png" alt="Testimonial-Pic" />
 
                     <i class="fas fa-quote-left"></i>
 
                     <p class="comment">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Voluptatum deleniti architecto harum natus aliquid nostrum 
-                        ad asperiores sequi, eligendi sint assumenda eum illo similique 
-                        repellendus.
+                        Especialista em soluções de nuvem. Migração perfeita, sem falhas.
                     </p>
 
                     <div class="intro">
-                        <h3>luke wood</h3>
+                        <h3>Mariana Costa</h3>
                         <h5>graphic designer</h5>
                     </div>
                 </div>
 
                 <div class="swiper-slide testi-item">
-                    <img src="assets/images/Testimonials/pic-4.png" alt="Testimonial-Pic" />
+                    <img src="assets/images/Testimonials/pessoa 4.jpg" alt="Testimonial-Pic" />
 
                     <i class="fas fa-quote-left"></i>
 
                     <p class="comment">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Voluptatum deleniti architecto harum natus aliquid nostrum 
-                        ad asperiores sequi, eligendi sint assumenda eum illo similique 
-                        repellendus.
+                        Habilidades de análise de dados impressionantes. Nossos processos estão mais otimizados.
                     </p>
 
                     <div class="intro">
-                        <h3>sarah glenn</h3>
+                        <h3>Carlos Fernandes</h3>
                         <h5>freelancer</h5>
                     </div>
                 </div>
 
                 <div class="swiper-slide testi-item">
-                    <img src="assets/images/Testimonials/pic-5.png" alt="Testimonial-Pic" />
+                    <img src="assets/images/Testimonials/pessoa 5.avif" alt="Testimonial-Pic" />
 
                     <i class="fas fa-quote-left"></i>
 
                     <p class="comment">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Voluptatum deleniti architecto harum natus aliquid nostrum 
-                        ad asperiores sequi, eligendi sint assumenda eum illo similique 
-                        repellendus.
+                        Serviço de DBA impecável. Manutenção e desempenho sempre no topo.
                     </p>
 
                     <div class="intro">
-                        <h3>samit patel</h3>
+                        <h3>Fernanda Oliveira</h3>
                         <h5>graphic designer</h5>
                     </div>
                 </div>
 
                 <div class="swiper-slide testi-item">
-                    <img src="assets/images/Testimonials/pic-5.png" alt="Testimonial-Pic" />
+                    <img src="assets/images/Testimonials/pessoa 6.jpg" alt="Testimonial-Pic" />
 
                     <i class="fas fa-quote-left"></i>
 
                     <p class="comment">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Voluptatum deleniti architecto harum natus aliquid nostrum 
-                        ad asperiores sequi, eligendi sint assumenda eum illo similique 
-                        repellendus.
+                        Perito em nuvem. Melhorou nossa infraestrutura significativamente.
                     </p>
 
                     <div class="intro">
-                        <h3>samit patel</h3>
+                        <h3>Lucas Almeida</h3>
                         <h5>graphic designer</h5>
                     </div>
                 </div>
@@ -562,105 +602,105 @@
         <div class="swiper-container blog-slider">
             <div class="swiper-wrapper">
 
+                <!--Fullstack-->
                 <div class="swiper-slide blog-item">
                     <div class="image">
-                        <img src="assets/images/Blogs/blog-1.png" alt="Blog-Image" />
+                        <img src="assets/images/Blogs/fullstack.png" alt="Blog-Image" />
                     </div>
                     <div class="content">
                         <div class="intro">
-                            <h5><i class="fas fa-calendar-alt"></i><span>1st jan, 2022</span></h5>
+                            <h5><i class="fas fa-calendar-alt"></i><span>10st jun, 2024</span></h5>
                             <h5><i class="fas fa-user"></i><span>by admin</span></h5>
                         </div>
-                        <a class="main-heading" href="#">How to make your website responsive</a>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                            Nam possimus modi.
+                        <a class="main-heading" href="https://www.totvs.com/blog/carreiras/desenvolvedor-full-stack/">O que é desenvolvedor full stack?</a>
+                        <p>O que é desenvolvedor full stack, o que faz, salário, habilidades e muito mais!
                         </p>    
-                        <a href="#" class="btn">read more <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://www.totvs.com/blog/carreiras/desenvolvedor-full-stack/" class="btn">leia mais <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
+                <!--Construtor de site-->
                 <div class="swiper-slide blog-item">
                     <div class="image">
-                        <img src="assets/images/Blogs/blog-2.png" alt="Blog-Image" />
+                        <img src="assets/images/Blogs/construcao.webp" alt="Blog-Image" />
                     </div>
                     <div class="content">
                         <div class="intro">
-                            <h5><i class="fas fa-calendar-alt"></i><span>1st jan, 2022</span></h5>
+                            <h5><i class="fas fa-calendar-alt"></i><span>14st jun, 2024</span></h5>
                             <h5><i class="fas fa-user"></i><span>by admin</span></h5>
                         </div>
-                        <a class="main-heading" href="#">Learn Web Development As A Beginner</a>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                            Nam possimus modi.
+                        <a class="main-heading" href="#">Banco de Dados: </a>
+                        <p>o que é, principais tipos e um guia para iniciar
                         </p>    
-                        <a href="#" class="btn">read more <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://www.alura.com.br/artigos/banco-de-dados" class="btn">leia mais <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
+                <!--Migração nuvem-->
                 <div class="swiper-slide blog-item">
                     <div class="image">
-                        <img src="assets/images/Blogs/blog-3.png" alt="Blog-Image" />
+                        <img src="assets/images/Blogs/migrar-nuvem.webp" alt="Blog-Image" />
                     </div>
                     <div class="content">
                         <div class="intro">
-                            <h5><i class="fas fa-calendar-alt"></i><span>1st jan, 2022</span></h5>
+                            <h5><i class="fas fa-calendar-alt"></i><span>18st jun, 2024</span></h5>
                             <h5><i class="fas fa-user"></i><span>by admin</span></h5>
                         </div>
-                        <a class="main-heading" href="#">Complete Roadmap For Web Development</a>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                            Nam possimus modi.
+                        <a class="main-heading" href="#">Afinal, como migrar para a nuvem?</a>
+                        <p>Sistemas de cloud para empresas têm sido encarados como essenciais para a transformação digital.
                         </p>    
-                        <a href="#" class="btn">read more <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://epocanegocios.globo.com/Tecnologia/noticia/2021/04/afinal-como-migrar-para-nuvem.html" class="btn">leia mais <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
+                <!--Analise de Bancos de Dados-->
                 <div class="swiper-slide blog-item">
                     <div class="image">
-                        <img src="assets/images/Blogs/blog-4.png" alt="Blog-Image" />
+                        <img src="assets/images/Blogs/analise de dados.avif" alt="Blog-Image" />
                     </div>
                     <div class="content">
                         <div class="intro">
                             <h5><i class="fas fa-calendar-alt"></i><span>1st jan, 2022</span></h5>
                             <h5><i class="fas fa-user"></i><span>by admin</span></h5>
                         </div>
-                        <a class="main-heading" href="#">Websites & Tools For Every Web Developer</a>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                            Nam possimus modi.
+                        <a class="main-heading" href="https://oglobo.globo.com/patrocinado/dino/noticia/2024/06/06/analise-de-dados-pode-garantir-o-crescimento-das-empresas.ghtml">Análise de dados pode garantir o crescimento das empresas</a>
+                        <p>Em um mundo cada vez mais conectado pelos avanços tecnológicos, é crucial buscar acesso a dados em tempo real, visualizações intuitivas...
                         </p>    
-                        <a href="#" class="btn">read more <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://oglobo.globo.com/patrocinado/dino/noticia/2024/06/06/analise-de-dados-pode-garantir-o-crescimento-das-empresas.ghtml" class="btn">leia mais <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
+                <!--Criação de Dashboards-->
                 <div class="swiper-slide blog-item">
                     <div class="image">
-                        <img src="assets/images/Blogs/blog-5.png" alt="Blog-Image" />
+                        <img src="assets/images/Blogs/dashboard.webp" alt="Blog-Image" />
                     </div>
                     <div class="content">
                         <div class="intro">
                             <h5><i class="fas fa-calendar-alt"></i><span>1st jan, 2022</span></h5>
                             <h5><i class="fas fa-user"></i><span>by admin</span></h5>
                         </div>
-                        <a class="main-heading" href="#">Top 10 CSS tricks for every web developer</a>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                            Nam possimus modi.
+                        <a class="main-heading" href="https://www.mundodomarketing.com.br/analise-de-dados-no-marketing-digital-criando-dashboards-valiosos-e-campanhas-efetivas/">Análise de Dados no Marketing Digital: criando dashboards valiosos e campanhas efetivas</a>
+                        <p>Bitrix24 CoPilot otimiza rotina do profissional de Marketing que precisa gerar insights e atender os clientes de maneira ágil
                         </p>    
-                        <a href="#" class="btn">read more <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://www.mundodomarketing.com.br/analise-de-dados-no-marketing-digital-criando-dashboards-valiosos-e-campanhas-efetivas/" class="btn">leia mais <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
+                <!--Suporte pos-execução-->
                 <div class="swiper-slide blog-item">
                     <div class="image">
-                        <img src="assets/images/Blogs/blog-5.png" alt="Blog-Image" />
+                        <img src="assets/images/Blogs/suporte-ao-cliente.jpg" alt="Blog-Image" />
                     </div>
                     <div class="content">
                         <div class="intro">
                             <h5><i class="fas fa-calendar-alt"></i><span>1st jan, 2022</span></h5>
                             <h5><i class="fas fa-user"></i><span>by admin</span></h5>
                         </div>
-                        <a class="main-heading" href="#">Top 10 CSS tricks for every web developer</a>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                            Nam possimus modi.
+                        <a class="main-heading" href="https://www.zendesk.com.br/blog/suporte-ao-cliente/">O que é suporte ao cliente? Quais seus benefícios?</a>
+                        <p>Quando se fala em suporte ao cliente, é comum associarmos o termo ao atendimento de demandas oriundas da jornada do consumidor de maneira reativa.
                         </p>    
-                        <a href="#" class="btn">read more <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://www.zendesk.com.br/blog/suporte-ao-cliente/" class="btn">leia mais <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -753,10 +793,10 @@
     <!-------------------- Footer Area (Start) -------------------->
     <footer>
         <div class="social">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin-in"></a>
+            <a href="https://facebook.com" class="fab fa-facebook-f"></a>
+            <a href="https://twitter.com" class="fab fa-twitter"></a>
+            <a href="https://instagram.com" class="fab fa-instagram"></a>
+            <a href="https://linkedin.com" class="fab fa-linkedin-in"></a>
         </div>
 
         <div class="content">
@@ -793,7 +833,7 @@
     <script>
         var typed = new Typed('.typing-text', {
 
-            strings: ['FullStack', 'Database Administrador', 'Database Analista', 'Data Cloud Engineer'],
+            strings: ['FullStack', 'Database Administrador', 'Database Analista', 'Data Cloud Engineer','Criador de Dashboard','suporte pos venda'],
             typeSpeed: 120,
             loop: true
         });
