@@ -45,7 +45,7 @@ a {
     color: var(--red) !important;
 }
 
-p, td {
+p, td, th {
     color: var(--red);
 }
 
