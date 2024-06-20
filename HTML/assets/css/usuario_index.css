@@ -15,6 +15,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+}
+
+body{
     background-color: var(--black);
 }
 
@@ -32,7 +35,7 @@ h4,
 h5,
 h6,
 .bem-vindo{
-    color: var(--red) !important;
+    color: var(--red) ;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
@@ -42,8 +45,8 @@ a {
     color: var(--red) !important;
 }
 
-p {
-    color: var(--white);
+p, td {
+    color: var(--red);
 }
 
 input {
@@ -54,7 +57,7 @@ input {
 }
 
 input:focus, select:focus{
-    outline: 4px solid var(--grey) !important;
+    outline: 4px solid var(--red) !important;
 }
 select option:hover{
     background-color: var(--grey);
@@ -82,6 +85,16 @@ section {
     color: var(--red);
 }
 
+.modal-header{
+    background-color: var(--red);
+
+}
+.modal-header h1{
+    color: var(--black);
+}
+.modal-body{
+    background-color: var(--black);
+}
 
 footer {
     max-height: 85px;
@@ -96,4 +109,8 @@ footer {
     box-shadow: 2px 0 10px -2px var(--red);
     height: 590px;
     overflow: hidden;
+}
+
+label{
+    color: var(--red);
 }
