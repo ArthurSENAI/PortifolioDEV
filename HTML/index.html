@@ -23,6 +23,7 @@
     <!-- Custom Stylesheets -->
     <link rel="stylesheet"  href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/submenu.css">
 
 </head>
 <body>
@@ -49,45 +50,69 @@
 
         <!-- Navbar -->
         <nav class="navbar" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
-            <span style="display: flex; align-items: center; margin-right: 20px;">
-                <i class="fas fa-home fa-lg" aria-hidden="true"></i>
+            <span style="display: flex; align-items: center; margin-right: 9px;">
+                <i class="fas fa-home fa-lg" aria-hidden="true" style="color: #ac0404;"></i>
                 <a href="#home" style="margin-left: 10px;">Inicio</a>
             </span>
             
             <span style="display: flex; align-items: center; margin-right: 20px;">
-                <i class="fas fa-info-circle fa-lg" aria-hidden="true"></i>
+                <i class="fas fa-info-circle fa-lg" aria-hidden="true" style="color: #ac0404;"></i>
                 <a href="#about" style="margin-left: 10px;">sobre</a>
             </span>
             
             <span style="display: flex; align-items: center; margin-right: 20px;">
-                <i class="fas fa-gavel fa-lg" aria-hidden="true"></i>
+                <i class="fas fa-gavel fa-lg" aria-hidden="true" style="color: #ac0404;"></i>
                 <a href="#service" style="margin-left: 10px;">Serviço</a>
             </span>
             
             <span style="display: flex; align-items: center; margin-right: 20px;">
-                <i class="fas fa-window-restore fa-lg" aria-hidden="true"></i>
+                <i class="fas fa-window-restore fa-lg" aria-hidden="true" style="color: #ac0404;"></i>
                 <a href="#portfolio" style="margin-left: 10px;">Portfolio</a>
             </span>
             
             <span style="display: flex; align-items: center; margin-right: 20px;">
-                <i class="fa fa-users fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-users fa-lg" aria-hidden="true" style="color: #ac0404;"></i>
                 <a href="#testimonial" style="margin-left: 10px;">Depoimento</a>
             </span>
             
             <span style="display: flex; align-items: center; margin-right: 20px;">
-                <i class="fa fa-file fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-file fa-lg" aria-hidden="true" style="color: #ac0404;"></i>
                 <a href="#blog" style="margin-left: 10px;">Noticias</a>
             </span>
             
             <span style="display: flex; align-items: center; margin-right: 20px;">
-                <i class="fa fa-phone-square fa-lg" aria-hidden="true" style="color: ;"></i>
+                <i class="fa fa-phone-square fa-lg" aria-hidden="true" style="color: #ac0404;""></i>
                 <a href="#contact" style="margin-left: 10px;">Contato</a>
             </span>
 
-            <span style="display: flex; align-items: center; margin-right: 20px;">
-                <i class="fa fa-user" aria-hidden="true"></i>
-                <a href="Login.html" style="margin-left: 10px;">Login</a>
-            </span>
+            <div class="dropdown" style="position: relative; display: inline-block;">
+                <span style="display: flex; align-items: center; margin-right: 20px;">
+                    <i class="fa fa-user" aria-hidden="true" style="color: #ac0404;"></i>
+                    <a href="Login.html" style="margin-left: 10px;">Login</a>
+                </span>
+                <div class="dropdown-content" style="display: none; position: absolute; background-color: #F7F5F2; width: 200px; box-shadow: 0px 8px 16px 0px #ac0404; z-index: 1; padding: 8px; border-radius: 3%;">
+                    <a href="UsuarioIndex.html" style="color: black; padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
+                        <i class="fa fa-users" aria-hidden="true" style="margin-right: 20px; color: #ac0404;"></i>
+                        Usuarios
+                    </a>
+                    <a href="AgendamentoIndex.html" style="color: black; padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
+                        <i class="fa fa-calendar" aria-hidden="true" style="margin-right: 20px; color: #ac0404;"></i>
+                        Agendamento Admin
+                    </a>
+                    <a href="AgendamentoIndex.html" style="color: black; padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
+                        <i class="fa fa-calendar" aria-hidden="true" style="margin-right: 20px; color: #ac0404;"></i>
+                        Agendamento User
+                    </a>
+                    <a href="#settings" style="color: black; padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
+                        <i class="fa fa-address-book" aria-hidden="true" style="margin-right: 20px; color: #ac0404;"></i>
+                        Cadastro Agendamento
+                    </a>
+                    <a href="#logout" style="color: black; padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
+                        <i class="fa fa-file-archive" aria-hidden="true" style="margin-right: 20px; color: #ac0404;"></i>
+                        Relatório
+                    </a>
+                </div>
+</div>
         </nav>
 
         <!-- Menubar -->
@@ -108,6 +133,8 @@
                     <h2>Ola!</h2>
                     <h1>Eu sou um <span class="typing-text"></span></h1>
                     <p>Especialista em dados. Conhecimentos em Analise e Administração de dados. Construindo uma base em Tecnologia Cloud</p>
+                    <p><b>Missão:</b> Trazer sites inovadores e mordernos. Banco de Dados bem planejados e de facil coleta para analises de dados.
+                    | <b>Valores:</b> Pontualidade, Veracidade e Integridade</p>
                     <a href="#about" class="btn">sobre mim <i class="fas fa-user"></i></a>
                 </div>
             </div>
@@ -872,5 +899,17 @@
         });
     </script>
 
+    <!--Submenu-->
+    <script>
+        // Script to handle the dropdown functionality
+     document.querySelector('.dropdown').addEventListener('mouseover', function() {
+         this.querySelector('.dropdown-content').style.display = 'block';
+     });
+ 
+     document.querySelector('.dropdown').addEventListener('mouseout', function() {
+         this.querySelector('.dropdown-content').style.display = 'none';
+     });
+     </script>
+  
 </body>
 </html>
