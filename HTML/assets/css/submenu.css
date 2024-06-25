@@ -22,35 +22,29 @@
 
 .dropdown-content a {
     color: var(--white);
-    padding: 7px;
+    padding: 7px; /* Adiciona padding */
     text-decoration: none;
     display: flex;
     align-items: center;
-    margin: 5px;
+    margin: 5px; /* Adiciona a margem */
+    border-radius: 30% !important;
 }
 
 .dropdown-content a:hover {
-    background-color: var(--black);
-    color: var(--red); /* Muda a cor da letra para azul ao passar o mouse */
+    background-color: var(--red) !important; /* Muda a cor do fundo para vermelho ao passar o mouse */
+    color: var(--black)!important; /* Muda a cor da letra para branco ao passar o mouse */
+    border:var(--red) solid 2px;    
+    border-radius: 3%;
+    text-decoration: none !important;
+}
+
+.dropdown-content a:hover .fa{
+    color: var(--black)!important; /* Muda a cor do icone para branco ao passar o mouse */
+    text-decoration: none;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
- .dropdown-content a {
-    color: var(--black);
-    padding: 18px; /* Adiciona padding */
-    text-decoration: none;
-    display: flex;
-    margin: 1px; /* Adiciona a margem */
-    border-radius: 3%;
-    
-}
 
-.dropdown-content a:hover {
-    color: var(--red);
-    background-color: #ddd;       
-    border:var(--red) solid 2px;
-    border-radius: 3%;
-    
-}
+
